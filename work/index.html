@@ -8,10 +8,15 @@
   </head>
   <body>
     <h1>Realtime communication with WebRTC</h1>
-    <button onclick="startStream()">start call</button>
-    <video id="video" autoplay playsinline></video>
-    <button onclick="endStream()">end call</button>
+    <video id="localVideo" autoplay playsinline></video>
+    <video id="remoteVideo" autoplay playsinline></video>
+    <div>
+      <button id="startButton">Start</button>
+      <button id="callButton">Call</button>
+      <button id="hangupButton">Hang Up</button>
+    </div>
     <video id="screen" autoplay playsinline></video>
+    <script src="https://webrtc.github.io/adapter/adapter-latest.js"></script>
     <script src="./js/main.js"></script>
   </body>
 </html>
